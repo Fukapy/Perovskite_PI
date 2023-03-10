@@ -1,0 +1,111 @@
+﻿Abbreviation,Formal,memo,len
+1.3-Pr(NH3)2,(C3H7(NH3)2),,12
+n-C3H7NH3,(C3H7NH3),,9
+pF1PEA,(FC6H4CH2CH2NH3),,6
+oF1PEA,(FC6H4CH2CH2NH3),,6
+N-EtPy,(C5H5NC2H5),N-ethylpyridinium,6
+mF1PEA,(FC6H4CH2CH2NH3),3-fluorophenethylammonium,6
+iso-BA,(C4H9NH3),,6
+EU-pyP,(C20H12EuN4),Eu‐porphyrin complex,6
+Cl-PEA,(ClC6H4CH2CH2NH3),,6
+CH3ND3,(CH3NH3),,6
+Br-PEA,(BrC6H4CH2CH2NH3),,6
+5-AVAI,(COOH(CH2)4NH3),,6
+PyrEA,(C5H5NC2H4NH3),ピリジニウムエチルアンモニウム,5
+pFPEA,(FC6H4CH2CH2NH3),,5
+oFPEA,(FC6H4CH2CH2NH3),,5
+NMABr,(C10H7CH2NH3),1-naphthylmethylammonium,5
+mFPEA,(FC6H4CH2CH2NH3),,5
+H-PEA,(C6H5CH2CH2NH3),,5
+f-PEA,(FC6H4CH2CH2NH3),4-fluorophenethylammonium,5
+F-PEA,(FC6H4CH2CH2NH3),,5
+F5PEA,(C6F5CH2CH2NH3),Pentafluorophenethylammonium,5
+APMim,(C7H14N3),3-(3-aminopropyl)-1-methylimidazolium,5
+5-AVA,(COOH(CH2)4NH3),,5
+4FPEA,(FC6H4CH2CH2NH3),,5
+4APyH,(C5H6N2),4-アミノピリジン(電荷無し),5
+4ApyH,(C5H6N2),,5
+4AMPY,(C6H7N2),,5
+3AMPY,(C6H7N2),,5
+ThMA,(SC4H3CH2NH3),2-thiophenemethylammonium,4
+ThFA,(SC4H3CHNH2NH2),2‐Thiopheneformamidinium,4
+TFEA,(CF3CH2NH2),,4
+PyEA,(C5H5NC2H4NH3),ピリジニウムエチルアンモニウム,4
+PPEA,(C6H5CNH3C2H3),phenyl-2-propen-1-amine,4
+PDMA,(C6H4(CH2NH3)2),"1,4-phenylenedimethanammonium",4
+MTEA,(CH3S(CH2)2NH3),2-メチルチオ-エチルアンモニウム,4
+MIC3,((CH3)3C3HNS),"3,4,5-trimethyl thiazolium　(4)",4
+MIC2,((CH3)2C3H2NS),"3,4-dimethyl thiazolium　(３)",4
+MIC1,(CH3C3H3NS),N-methyl thiazolium　(２),4
+ImEA,(C3N2H4(CH2)2NH3),imidazolium ethylammonium ,4
+HTAB,C9H22N,n-hexyl trimethyl ammonium bromide,4
+GABA,(COOH(CH2)3NH3),,4
+F3EA,(CF3CH2NH3),"2,2,2-trifluoroethylamine",4
+ClEA,(CH2ClCH2NH3),2-choloroethylamine (シーアイではなくシーエル),4
+CHMA,(C6H11CH2NH3),,4
+CEPA,(ClC6H4C2H4NH3),,4
+BzDA,(NH3CH2C6H4CH2NH3),"1,4-benzenedimethanamonium",4
+Anyl,(C6H5NH3),,4
+FPEA,(FC6H4CH2CH2NH3),,4
+4AMP,(C6H15N2),,4
+3AMP,(C6H15N2),(aminomethyl)piperidinium,4
+TMA,((CH3)4N),,3
+THM,(COOH(CH2)4NH3),"1,1,1-Trimethylhydrazinium",3
+TEA,(SC4H3CH2CH2NH3),thiophene−2−ethylamine,3
+TBA,((C4H9)4N),テトラブチルアンモニウム,3
+PTA,(C6H5N(CH3)3),phenyltrimethylammonium,3
+PPA,(C6H5(CH2)3NH3),3-phenylpropylamine,3
+PMA,(C6H5NH2CH3),N-phenylmethylammonium,3
+PGA,(HCCCH2NH3),propargylamine,3
+PEI,(C2H4NH),,3
+Pei,(C2H4NH),polyethylenimine (単量体部分を記入),3
+PDA,(C6H5N(CH3)3),"propane-1,3-diammonium",3
+PBA,(C6H5(CH2)4NH3),4-phenylbutan-1-aminium,3
+OdA,(NH3(CH2)8NH3),,3
+NEA,(C10H7(CH2)2NH3),1-naphthalene ethylamine,3
+iPA,(C3H5NH3),iso-propylammonium,3
+IEA,(IC2H4NH3),,3
+HEA,(OH(CH2)2NH3),2-hydroxyethylamine cation,3
+HdA,(NH3(CH2)6NH3),,3
+HAD,(C6H12(NH3)2),hexamethylendiammonium,3
+FEA,(CF3CH2NH3),"2,2,2-trifluoroethylamine",3
+EPA,(C6H5(CH2)2NH3),恐らくPEAの転記ミス,3
+EDA,((CH2)2(NH2)2),ethylenediamine 電荷無し？,3
+DPA,(C6H5NHCH3CH3),"N,N-dimethylphenylammounium",3
+DMA,((CH3)2NH2),,3
+DAT,(NH3(CH2)8NH3),,3
+DAP,((CH2)3(NH3)2),,3
+BZA,(C7H7NH3),benzylammonium,3
+BYA,(HCCCH2CNH3),3-butyn-1-amine,3
+PEA,(C6H5(CH2)2NH3),,3
+BIM,(C6H6N4),,3
+BEA,(NH3(CH2)4NH3),"1,4-Butanediamine",3
+BdA,(NH3(CH2)4NH3),"Butyl-1,4-Diammonium",3
+BDA,(NH3C6H4NH3),"1,4-benzene diammonium",3
+ALA,(C3H8N),allylammonium,3
+Ada,(C10H15),# adamantan-1-yl,3
+Ace,(CH3C(NH2)2),,3
+A43,((CF3)3CO(CH2)3NH3),,3
+AVA,(COOH(CH2)4NH3),,3
+TN,C3H12N2,trimethylenediammonium,2
+TA,C3H2NSNH3,thiazole ammonium,2
+PR,(H3N(CH2)3NH3),,2
+PN,C3H10N2,propylenediammonium,2
+PA,(C3H5NH3),,2
+OA,(C8H17NH3),octylammonium,2
+IA,(C3H5N2),imidazolium,2
+HA,(N2H5),,2
+GU,((NH2)3C),,2
+GA,(CH6N3),,2
+FA,((NH2)2CH),,2
+DI,((CH3)2NH2),,2
+MA,(CH3NH3),,2
+CA,(C3H8N),cyclopropylammonium,2
+BU,(H3N(CH2)4NH3),,2
+IM,C3N2H5,,2
+BE,(C6H5CH2NH3),,2
+DA,(C12H24NH3),dodecylammonium,2
+BA,(C4H9NH3),,2
+AN,(C6H5NH3),アニリンカチオン,2
+Aa,(CH3CNHNH3),acetamidinium,2
+EA,(C2H5NH3),ethylammonium,2
