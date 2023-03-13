@@ -7,7 +7,7 @@ run_mode = "Hyperopt" # "Hyperopt", "Train", "Predict", "Interpret"
 calc_shap = False
 
 target = "JV_default_PCE"
-use_X = "attempt" # "all", "per", "mat"
+use_X = "" # "all", "per", "mat"
 
 num_list = ["Cell_area_measured","Substrate_thickness","ETL_thickness","Perovskite_thickness","HTL_thickness_list","Backcontact_thickness_list"]
 fill_way = "zero" # "dummy", "zero", "median"
