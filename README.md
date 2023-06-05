@@ -26,12 +26,12 @@ It is a modified version of the Python open library `CBFV` for ease of use in th
 ## Setting arguments
 The types and meanings of the arguments of `settings.py` correspond to the following, respectively.
 
-///
+///(editing now)
 
 
 ## Default Output Folder
 
-
+///(editing now)
 
 ## Examples
 To run:
