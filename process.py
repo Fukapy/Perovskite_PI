@@ -1,5 +1,5 @@
 # process.py
-# editted 2023/3/13
+# editted 2023/6/24
 
 import pandas as pd
 import numpy as np
@@ -166,7 +166,7 @@ def cbfv_table(x_name, df, elem_prop="oliynyk"):
 
     df[x_name] = df[x_name].astype(str).str.replace("|", "", regex=True)
     for corr_i in range(len(corr)): # Search for strings in descending alphabetical order.
-        df[x_name] = df[x_name].str.replace(corr["Abbreviation"][corr_i], corr["Formal"][corr_i], regex=True)
+        df[x_name] = df[x_name].str.replace(corr["Abbreviation"][corr_i], corr["Chemical Formula"][corr_i], regex=True)
 
     # When there is nothing that cannot be converted (fast processing)
     try:
@@ -244,7 +244,7 @@ def file2vector(raw_file_name, split_way, per_elem_prop, fill_way, num_list, use
     x_list = []
     for x_name in list(df.columns):
 
-        if x_name in num_list:
+        if x_name in num_list and fill_way != "dummy": # 2023/6/24 add [and fill_way != "dummy"]
             x = numerical_sum_table(x_name, df, fill_way)
             x_list.append(x)
         elif x_name == "Perovskite_composition_long_form" and per_elem_prop != "dummy":
