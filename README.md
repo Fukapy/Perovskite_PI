@@ -56,23 +56,20 @@ The types and meanings of the arguments of `settings.py` correspond to the follo
 - valid_ratio_in_train (float): 0.25 # 0.8*0.25=0.2
 - n_trials (int): 25 # NN 38 finish
 - storage_name (str) : f"data/model/hyperopt/{use_X}_optuna_study_attempt"
-
--model_name (str) : "RF", "GBDT", "NN"
-
--n_estimators = 240
--max_depth (int or None) : None
--max_leaf_nodes (int or None) : None
--min_samples_split (int) : 3
--min_samples_leaf (int) : 2
-
--dim (int) : 100
--n_mid (int) : 2
--activation (str) : "relu"
--solver (str) : "adam"
--lr (float) : 1e-3
--epoch (int) : 200
--save_name (str) : f"{use_X}_{run_mode}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
--model_save_name (str) : f"model_{use_X}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
+- model_name (str) : "RF", "GBDT", "NN"
+- n_estimators = 240
+- max_depth (int or None) : None
+- max_leaf_nodes (int or None) : None
+- min_samples_split (int) : 3
+- min_samples_leaf (int) : 2
+- dim (int) : 100
+- n_mid (int) : 2
+- activation (str) : "relu"
+- solver (str) : "adam"
+- lr (float) : 1e-3
+- epoch (int) : 200
+- save_name (str) : f"{use_X}_{run_mode}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
+- model_save_name (str) : f"model_{use_X}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
 
 ## Default Output Folder
 
