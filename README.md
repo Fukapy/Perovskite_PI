@@ -5,16 +5,16 @@
 We implemented the codes on Python 3.9 in a computer of Windows 10.
 
 Minimum packages we used are following.
-- pandas == 1.4.4
-- numpy == 1.22.3
-- joblib == 1.1.0
-- scikit-learn == 1.1.2
 - cbfv == 1.1.0
-- optuna == 3.1.0
-- shap == 0.41.0
+- joblib == 1.1.0
 - matplotlib == 3.5.3
-- seaborn == 0.12.2
+- numpy == 1.22.3
+- optuna == 3.1.0
+- pandas == 1.4.4
+- scikit-learn == 1.1.2
 - scipy == 1.9.1
+- seaborn == 0.12.2
+- shap == 0.41.0
 
 
 ## Dataset
