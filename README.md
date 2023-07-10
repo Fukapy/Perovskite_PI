@@ -42,18 +42,37 @@ It is a modified version of the Python open library `CBFV` for ease of use in th
 ## Setting arguments
 The types and meanings of the arguments of `settings.py` correspond to the following, respectively.
 
-- raw_file_name (str): "data/raw/Perovskite_37930data.csv"
+- raw_file_name (str): "data/raw/Perovskite_36937data.csv"
 - run_mode (str): "Hyperopt", "Train", "Predict", "Interpret"
 - calc_shap (bool): Whether SHAP value is calculated on the interpretability of the model or not.
 - target (str): "JV_default_PCE"
 - use_X (str): "all"(Materials and processes for all layers), "per"(Only perovskite compositions), "mat"(Materials for all layers)
 - num_list (list): List of column names that can be treated as float type numbers. ["Cell_area_measured","Substrate_thickness","ETL_thickness", "Perovskite_thickness","HTL_thickness_list","Backcontact_thickness_list"]
-- fill_way = "zero" # "dummy", "zero", "median"
-- per_elem_prop = "oliynyk" # "dummy", "oliynyk", "magpie", "mat2vec" -> for PCE, only oliynyk.
+- fill_way (str) : "zero" # "dummy", "zero", "median"
+- per_elem_prop (str) :  "oliynyk" # "dummy", "oliynyk", "magpie", "mat2vec" -> for PCE, only oliynyk.
 - split_way (int): 0 = onehot, 1 = multihot_1, 2 = multihot_2, 3 = multihot_3
+- random_state (int): 0
+- test_ratio (float): 0.2
+- valid_ratio_in_train (float): 0.25 # 0.8*0.25=0.2
+- n_trials (int): 25 # NN 38 finish
+- storage_name (str) : f"data/model/hyperopt/{use_X}_optuna_study_attempt"
 
-///(editing now)
+-model_name (str) : "RF", "GBDT", "NN"
 
+-n_estimators = 240
+-max_depth (int or None) : None
+-max_leaf_nodes (int or None) : None
+-min_samples_split (int) : 3
+-min_samples_leaf (int) : 2
+
+-dim (int) : 100
+-n_mid (int) : 2
+-activation (str) : "relu"
+-solver (str) : "adam"
+-lr (float) : 1e-3
+-epoch (int) : 200
+-save_name (str) : f"{use_X}_{run_mode}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
+-model_save_name (str) : f"model_{use_X}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
 
 ## Default Output Folder
 
