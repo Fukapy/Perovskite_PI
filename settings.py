@@ -1,9 +1,9 @@
 # settings.py
-# editted 2023/3/13
+# editted 2023/7/7
 
 # Input
-raw_file_name = "data/raw/Perovskite_37930data.csv"
-run_mode = "Hyperopt" # "Hyperopt", "Train", "Predict", "Interpret"
+raw_file_name = "data/raw/Perovskite_36937data.csv"
+run_mode = "Predict" # "Hyperopt", "Train", "Predict", "Interpret"
 calc_shap = False
 
 target = "JV_default_PCE"
@@ -20,12 +20,12 @@ random_state = 0
 test_ratio = 0.2
 valid_ratio_in_train = 0.25 # 0.8*0.25=0.2
 n_trials = 25
-storage_name = f"data/model/hyperopt/{use_X}_optuna_study_attempt"
+storage_name = f"data/model/hyperopt/{use_X}_optuna_study"
 
 # Model
 model_name = "RF" # "RF", "GBDT", "NN"
 # RF, GBDT
-n_estimators = 200
+n_estimators = 270
 max_depth = None
 max_leaf_nodes= None
 min_samples_split = 3
