@@ -68,8 +68,8 @@ The types and meanings of the arguments of `settings.py` correspond to the follo
 - solver (str) : "adam"
 - lr (float) : 1e-3
 - epoch (int) : 200
-- save_name (str) : f"{use_X}_{run_mode}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
-- model_save_name (str) : f"model_{use_X}_{model_name}_sp{str(split_way)}_{per_elem_prop}_{fill_way}_r{str(random_state)}"
+- save_name (str) : f"{use_X} _ {run_mode} _ {model_name} _ sp{str(split_way)} _ {per_elem_prop} _ {fill_way} _ r{str(random_state)}"
+- model_save_name (str) : f"model _ {use_X} _ {model_name} _ sp{str(split_way)} _ {per_elem_prop} _ {fill_way} _ r{str(random_state)}"
 
 ## Default Output Folder
 
