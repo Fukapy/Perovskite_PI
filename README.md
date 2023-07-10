@@ -54,14 +54,14 @@ The types and meanings of the arguments of `settings.py` correspond to the follo
 - random_state (int): 0
 - test_ratio (float): 0.2
 - valid_ratio_in_train (float): 0.25 # 0.8*0.25=0.2
-- n_trials (int): 25 # NN 38 finish
+- n_trials (int): 25
 - storage_name (str) : f"data/model/hyperopt/{use_X}_optuna_study_attempt"
 - model_name (str) : "RF", "GBDT", "NN"
-- n_estimators = 240
+- n_estimators = 270
 - max_depth (int or None) : None
 - max_leaf_nodes (int or None) : None
 - min_samples_split (int) : 3
-- min_samples_leaf (int) : 2
+- min_samples_leaf (int) : 1
 - dim (int) : 100
 - n_mid (int) : 2
 - activation (str) : "relu"
