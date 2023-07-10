@@ -1,12 +1,27 @@
 # Perovskite_PI
-![messageImage_1678453658472](https://user-images.githubusercontent.com/79046839/224325508-e5f4116d-0061-4d6a-9eda-d0180c956995.jpg)
+
+
+## Dependencies
+We implemented the codes on Python 3.9 in a computer of Windows 10.
+Minimum packages we used are following.
+- pandas == 1.4.4
+- numpy == 1.22.3
+- joblib == 1.1.0
+- scikit-learn == 1.1.2
+- cbfv == 1.1.0
+- optuna == 3.1.0
+- shap == 0.41.0
+- matplotlib == 3.5.3
+- seaborn == 0.12.2
+- scipy == 1.9.1
+
 
 ## Dataset
 "Perovskite_database_content_all_data.csv" is the raw data downloaded from "The Perovskite Database Project" as at 31 March 2022. (#=42459)
 
-The "Perovskite_37930data.csv" is the csv file that was saved in the "data_arrangement.ipynb" notebook with unnecessary rows and columns deleted.
+The "Perovskite_36937data.csv" is the csv file that was saved in the "data_arrangement.ipynb" notebook with unnecessary rows and columns deleted.
 
-The formatted "Perovskite_37930data.csv" was used in the regression analysis.(#=37930)
+The formatted "Perovskite_36937data.csv" was used in the regression analysis.(#=37930)
 
 ## Files
 Each executable file has the following roles.
