@@ -73,7 +73,16 @@ The types and meanings of the arguments of `settings.py` correspond to the follo
 
 ## Default Output Folder
 
-///(editing now)
+`./data/csr/` : Folder where created vectors are stored　in "Hyperopt" or "Train" mode
+
+`./data/model` : Folder where created regression models are stored　in "Train" mode
+
+`./data/model/hyperopt` : Folder where hyperparameters tuned models are stored　in "Hyperopt" mode
+
+`./data/model/regression` : Folder where csv file of regression results are stored　in "Train" or "Predict" mode
+
+`./data/model/interpret` : Folder where feature importance or shap value are stored　in "Interpret" mode
+
 
 ## Examples
 To run:
