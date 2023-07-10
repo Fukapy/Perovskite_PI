@@ -22,7 +22,7 @@ Minimum packages we used are following.
 
 The "Perovskite_36937data.csv" is the csv file that was saved in the "data_arrangement.ipynb" notebook with unnecessary rows and columns deleted.
 
-The formatted "Perovskite_36937data.csv" was used in the regression analysis.(#=37930)
+The formatted "Perovskite_36937data.csv" was used in the regression analysis.(#=36937)
 
 ## Files
 Each executable file has the following roles.
