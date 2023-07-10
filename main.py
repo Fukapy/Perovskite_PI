@@ -1,5 +1,5 @@
 # main.py
-# editted 2023/3/13
+# editted 2023/7/10
 
 from train import *
 from process import *
@@ -86,7 +86,7 @@ def main(
         y_test_real = y_test
 
         y_test_result = pd.DataFrame([y_test_real.reset_index(drop = True), y_test_pred]).T.set_axis(["y_test_real", "y_test_pred"], axis = 1)
-        y_test_result.to_csv("data/model/" + save_name + ".csv", index = False)
+        y_test_result.to_csv("data/model/regression" + save_name + ".csv", index = False)
 
 
     elif run_mode == "Hyperopt":
@@ -149,7 +149,7 @@ def main(
             fti_array = model.feature_importances_
             fti = pd.Series(fti_array, index = list(columns))
             fti_sort = fti.sort_values(ascending = False)
-            pd.DataFrame(fti_sort, columns = {"feature_importance"}).to_csv("data/model/fti_" + save_name + ".csv", index = True)
+            pd.DataFrame(fti_sort, columns = {"feature_importance"}).to_csv("data/model/interpret/fti_" + save_name + ".csv", index = True)
             
             # fti summary
             df = pd.read_csv(raw_file_name)
@@ -157,22 +157,24 @@ def main(
                 df = df.iloc[:, 0:248] 
             
             x_col = list(df.columns)
-            if "perovskite_composition_long_form" in x_col:
-                x_col.remove("perovskite_composition_long_form")
+            if "Perovskite_composition_long_form" in x_col:
+                x_col.remove("Perovskite_composition_long_form")
+            
+            print(len(fti_sort))
             
             fti = []
             for x_name in x_col:
                 fti_list = []
-                for i in range(len(fti)):
+                for i in range(len(fti_sort)): # 7/5 modified
                     if x_name in fti_sort.index[i]:
                         fti_list.append(fti_sort[i])
                 fti_sum = sum(fti_list)
                 fti.append(fti_sum)
             per_fti = 1 - sum(fti)
             fti.append(per_fti)
-            fti_summary = pd.DataFrame(fti, index = x_col+["perovskite_composition_long_form"]) 
+            fti_summary = pd.DataFrame(fti, index = x_col+["Perovskite_composition_long_form"]) 
             fti_sum_sort = fti_summary.sort_values(by = 0, ascending = False)
-            fti_sum_sort.to_csv("data/model/fti_sum_" + save_name + ".csv",index=True)
+            fti_sum_sort.to_csv("data/model/interpret/fti_sum_" + save_name + ".csv",index=True)
             
         
             if calc_shap == True:
@@ -183,7 +185,7 @@ def main(
                 del X, X_test
                 explainer = shap.TreeExplainer(model, X_train[0:])
                 shap_values = explainer.shap_values(X_train[0:], check_additivity = False)
-                vec2csr(shap_values, "data/model/shap_" + model_save_name + "_csr.npz", None)
+                vec2csr(shap_values, "data/model/interpret/shap_" + model_save_name + "_csr.npz", None)
             
         else:
             pass
