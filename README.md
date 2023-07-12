@@ -36,9 +36,9 @@ Each executable file has the following roles.
 
 `settings.py`: Input the setting
 
-`revised_CBFV` is the file to import in `process.py`.
+revised_CBFV folder is imported in `process.py`.
 It is required to correct abbreviations in the composition and to convert the composition into a chemical feature vector.
-It is a modified version of the Python open library `CBFV` for ease of use in this project.
+It is a modified version of the Python open library CBFV for ease of use in this project.
 
 ## Setting arguments
 The types and meanings of the arguments of `settings.py` correspond to the following, respectively.
