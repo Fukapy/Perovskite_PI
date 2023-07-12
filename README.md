@@ -57,7 +57,7 @@ The types and meanings of the arguments of `settings.py` correspond to the follo
 - n_trials (int): 25
 - storage_name (str) : f"data/model/hyperopt/{use_X}_optuna_study_attempt"
 - model_name (str) : "RF", "GBDT", "NN"
-- n_estimators = 270
+- n_estimators (int) : 270
 - max_depth (int or None) : None
 - max_leaf_nodes (int or None) : None
 - min_samples_split (int) : 3
