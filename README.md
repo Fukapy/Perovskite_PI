@@ -1,4 +1,5 @@
 # Perovskite_PI
+![TOC_3_3](https://github.com/Fukapy/Perovskite_PI/assets/79046839/05d845e9-41f6-4966-b3f6-fb665af5182f)
 
 
 ## Dependencies
@@ -20,7 +21,7 @@ Minimum packages we used are following.
 ## Dataset
 "Perovskite_database_content_all_data.csv" is the raw data downloaded from "The Perovskite Database Project" as at 31 March 2022. (#=42459)
 
-The "Perovskite_36937data.csv" is the csv file that was saved in the "data_arrangement.ipynb" notebook with unnecessary rows and columns deleted.
+The "Perovskite_36937data.csv" is the csv file that was saved in the "Data Curation.ipynb" notebook with unnecessary rows and columns deleted.
 
 The formatted "Perovskite_36937data.csv" was used in the regression analysis.(#=36937)
 
@@ -35,9 +36,9 @@ Each executable file has the following roles.
 
 `settings.py`: Input the setting
 
-`revised_CBFV` is the file to import in `process.py`.
+revised_CBFV folder is imported in `process.py`.
 It is required to correct abbreviations in the composition and to convert the composition into a chemical feature vector.
-It is a modified version of the Python open library `CBFV` for ease of use in this project.
+It is a modified version of the Python open library CBFV for ease of use in this project.
 
 ## Setting arguments
 The types and meanings of the arguments of `settings.py` correspond to the following, respectively.
@@ -57,7 +58,7 @@ The types and meanings of the arguments of `settings.py` correspond to the follo
 - n_trials (int): 25
 - storage_name (str) : f"data/model/hyperopt/{use_X}_optuna_study_attempt"
 - model_name (str) : "RF", "GBDT", "NN"
-- n_estimators = 270
+- n_estimators (int) : 270
 - max_depth (int or None) : None
 - max_leaf_nodes (int or None) : None
 - min_samples_split (int) : 3
@@ -73,15 +74,15 @@ The types and meanings of the arguments of `settings.py` correspond to the follo
 
 ## Default Output Folder
 
-`./data/csr/` : Folder where created vectors are stored　in "Hyperopt" or "Train" mode
+`./data/csr/` : Folder where created vectors are stored in "Hyperopt" or "Train" mode
 
-`./data/model` : Folder where created regression models are stored　in "Train" mode
+`./data/model` : Folder where created regression models are stored in "Train" mode
 
-`./data/model/hyperopt` : Folder where hyperparameters tuned models are stored　in "Hyperopt" mode
+`./data/model/hyperopt` : Folder where hyperparameters tuned models are stored in "Hyperopt" mode
 
-`./data/model/regression` : Folder where csv file of regression results are stored　in "Train" or "Predict" mode
+`./data/model/regression` : Folder where csv file of regression results are stored in "Train" or "Predict" mode
 
-`./data/model/interpret` : Folder where feature importance or shap value are stored　in "Interpret" mode
+`./data/model/interpret` : Folder where feature importance or shap value are stored in "Interpret" mode
 
 
 ## Examples
